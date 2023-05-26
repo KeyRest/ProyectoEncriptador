@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F3F5FC;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    color: #FFFFFF;
+    border-radius: 24px;
+    transition: 0.5s all;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#copy button {
+    background: #FFFFFF;
+    color: #0A3871;
+}
+
+#encriptar {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+#desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+
+#buttons button:hover {
+    transform: scale(1.1);
+    font-size: 20;
+
+}
+
+#copy button:hover {
+    transform: scale(1.1);
+    font-size: 20;
+
+}
+
+#answer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 944px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#inputs {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    height: 944px;
+}
+
+#buttons small {
+    position: absolute;
+    transform: translateY(-25px);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+#contenedor {
+    display: flex;
+}
+
+#inputText {
+    border: none;
+    position: relative;
+    width: 680px;
+    height: 750px;
+    max-width: 680px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: transparent;
+}
+
+#inputText::placeholder {
+    color: #0A3871;
+    text-align: left;
+}
+
+#inputText:focus {
+    outline: none;
+}
+
+#copy {
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#output {
+    display: none;
+    text-align: center;
+    width: 336px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    min-height: 700px;
+    max-height: 700px;
+    max-width: 336px;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+.image{
+    width: 250;
+}
