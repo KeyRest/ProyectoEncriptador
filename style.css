@@ -16,6 +16,8 @@ button {
     font-size: 16px;
 }
 
+
+
 #copy button {
     background: #FFFFFF;
     color: #0A3871;
@@ -45,13 +47,13 @@ button {
 }
 
 #answer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 400px;
     height: 944px;
     background-color: white;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
@@ -59,8 +61,9 @@ button {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 50px 0 50px;
     height: 944px;
+    width: auto;
 }
 
 #buttons small {
@@ -77,7 +80,10 @@ button {
 
 
 #contenedor {
+    width: auto;
     display: flex;
+    flex-direction: row;
+
 }
 
 #inputText {
@@ -106,7 +112,7 @@ button {
 #copy {
     display: none;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #output {
@@ -125,6 +131,60 @@ button {
     overflow: scroll;
 }
 
-.image{
-    width: 250;
+.image {
+    width: auto;
+}
+
+
+
+
+@media screen and (max-width:1100px) {
+
+    #contenedor,
+    #inputs,
+    #answer,
+    #inputText {
+        width: auto;
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    #buttons {
+        width: auto;
+    }
+
+}
+
+
+@media screen and (max-width:720px) {
+
+
+
+    #contenedor,
+    #inputs,
+    #answer,
+    #buttons,
+    textarea {
+        width: auto;
+
+        margin: 0;
+
+    }
+
+    #buttons {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #contenedor,
+    #inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+
 }
